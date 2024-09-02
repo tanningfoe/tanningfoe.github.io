@@ -50,8 +50,9 @@ section {
     margin: 0 auto;
 }
 
-.project {
-    margin-bottom: 30px;
+ul {
+    list-style: disc;
+    margin-left: 20px;
 }
 
 footer {
