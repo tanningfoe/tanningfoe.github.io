@@ -28,3 +28,21 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+body {
+    background-color: #708090;
+    color: #ffffff;
+    font-family: 'Tahoma', sans-serif;
+}
+
+header {
+    background-color: #4682b4;
+    color: #ffffff;
+}
+
+a {
+    color: #4682b4;
+}
+
+section {
+    background-color: #dcdcdc;
+}
