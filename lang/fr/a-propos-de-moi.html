@@ -1,1 +1,146 @@
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos de Moi - Votre Nom</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .store-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffab40;
+            color: #333;
+            text-align: center;
+            padding: 16px;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+        .background-shade {
+            position: fixed;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            z-index: 999;
+        }
+        .button {
+            flex: 1;
+            margin: 0 5px;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            box-sizing: border-box;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .button:active {
+            background-color: #003d7a;
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            width: 100%;
+            height: calc(100vh - 120px);
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .bottom-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+        .highlighted-link {
+            color: #fff;
+            background-color: #007bff;
+            padding: 0 10px;
+            text-decoration: none;
+            font-weight: normal;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+        .highlighted-link:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 768px) {
+            .store-banner {
+                font-size: 20px;
+            }
+            .background-shade {
+                flex-direction: column;
+            }
+            .button {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="store-banner">
+        Votre Portfolio
+    </div>
+    <div class="background-shade">
+        <a href="../../index_fr.html" class="button">Accueil</a> 
+        <a href="projets.html" class="button">Projets</a>
+        <a href="a-propos-de-moi.html" class="button">À propos de moi</a>
+    </div>
+    <div class="main-content">
+        <h1>À Propos de Moi</h1>
+        <p>Bonjour ! Je suis Votre Nom, une personne passionnée dans le domaine de [Votre Domaine, par exemple, le développement web, la cybersécurité, etc.].</p>
+        <p>J'ai une solide expérience en [mentionner compétences ou expériences, par exemple, développement logiciel, gestion de projet, etc.]. Au fil des ans, j'ai travaillé sur divers projets, affinant mes compétences et élargissant mes connaissances.</p>
+        <p>Mon parcours a commencé avec [mentionner brièvement comment vous avez commencé dans votre domaine, par exemple, un projet inspirant, une formation, etc.]. Depuis lors, j'ai été impliqué dans [décrire quelques réalisations ou expériences notables].</p>
+        <p>Quand je ne travaille pas, j'aime [mentionner loisirs ou intérêts]. N'hésitez pas à explorer mes projets et à me contacter si vous souhaitez collaborer ou en savoir plus sur mon travail.</p>
+    </div>
+  <div class="bottom-banner">
+        | <a href="index_fr.html" id="language-toggle">FR</a> | 2024 @br21nfvcktr1p. Tous droits réservés. |
+  </div>
+</body>
+</html>
