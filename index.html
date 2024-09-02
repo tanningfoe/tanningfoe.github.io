@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Web Page</title>
-    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Page Web Responsive</title>
     <style>
         html, body {
             margin: 0;
@@ -112,29 +111,6 @@
             box-sizing: border-box;
             text-align: center;
         }
-        .main-content header {
-            height: 300px; /* Adjust the height as needed */
-            background-image: url('https://example.com/path/to/your/image.jpg'); /* Replace with your image URL */
-            background-size: cover; /* Ensure the image covers the header */
-            background-position: center; /* Center the image */
-            color: white; /* Text color inside the header */
-            padding: 20px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: relative; /* Ensure the header content positions correctly */
-        }
-        .main-content header h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-        .main-content header p {
-            margin: 10px 0;
-        }
-        .main-content header .redirect-button {
-            margin: 5px;
-        }
         .bottom-banner {
             position: fixed;
             bottom: 0;
@@ -161,7 +137,21 @@
         .highlighted-link:hover {
             background-color: #0056b3;
         }
-        .redirect-button {
+        @media (max-width: 768px) {
+            .store-banner {
+                font-size: 20px;
+            }
+            .background-shade {
+                flex-direction: column;
+            }
+            .button {
+                margin: 5px 0;
+            }
+        }
+         .highlighted-link:hover {
+            background-color: #0056b3;
+        }
+         .redirect-button {
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -191,33 +181,31 @@
         🖥️ tanningfoe.github.io 🖥️
     </div>
     <div class="background-shade">
-        <a href="#" class="button">Home</a> 
-        <a href="/lang/en/projects.html" class="button">Projects</a>
-        <a href="/lang/en/about-me.html" class="button">About me</a>
+        <a href="#" class="button">Accueil</a> 
+        <a href="/lang/en/projects.html" class="button">Projets</a>
+        <a href="/lang/fr/about-me.html" class="button">À propos de moi</a>
     </div>
     <div class="main-content">
         <header>
-            <h1>Jean-Raphaël Felli Plourde | Certified network computing specialist (AEC)</h1>
-            <p>Hi :) I'm developing this site.....</p>
-            <p>Email: <a href="mailto:jeanraphaelfelliplourde@gmail.com">jeanraphaelfelliplourde@gmail.com</a></p>
-            <p>
-                <a href="https://linktr.ee/jeanraphaelfelliplourde" class="redirect-button" title="Linktr.ee">
-                    <img src="images/icons/linktr.ee.jpeg" alt="Redirect Icon">
-                </a>
+        <h1>Mes liens:</h1>
+    
+            <a href="https://linktr.ee/jeanraphaelfelliplourde" class="redirect-button" title="Linktr.ee">
+        <img src="images/icons/linktr.ee.jpeg" alt="Redirect Icon">
+                 </a>
                 <a href="https://linkedin.com/in/jeanraphaelfelliplourde" class="redirect-button" title="Linkedin">
-                    <img src="images/icons/linkedin.jpeg" alt="Redirect Icon">
-                </a>
-                <a href="https://github.com/tanningfoe" class="redirect-button" title="Github">
-                    <img src="images/icons/github.jpeg" alt="Redirect Icon">
-                </a>
-                <a href="https://github.com/tanningfoe" class="redirect-button" title="HTB">
-                    <img src="images/icons/hackthebox.jpeg" alt="Redirect Icon">
-                </a>
-            </p>
-        </header>
+        <img src="images/icons/linkedin.jpeg" alt="Redirect Icon">
+                     </a>
+                 <a href="https://github.com/tanningfoe" class="redirect-button" title="Github">
+        <img src="images/icons/github.jpeg" alt="Redirect Icon">
+                     </a>
+                 <a href="https://github.com/tanningfoe" class="redirect-button" title="HackTheBox">
+        <img src="images/icons/hackthebox.jpeg" alt="Redirect Icon">
+                     </a>
+        </p>
+                </header>
     </div>
     <div class="bottom-banner">
-        | Language: <a href="index_fr.html" id="language-toggle">FR</a> | 2024 @tanningfoe All rights reserved. |
-    </div>
+         | Language: <a href="index_fr.html" id="language-toggle">FR</a> | 2024 @tanningfoe All rights reserved. |
+    </div> 
 </body>
 </html>
