@@ -138,6 +138,29 @@
         .highlighted-link:hover {
             background-color: #0056b3;
         }
+         .redirect-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background-color: #007bff;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            padding: 0;
+        }
+        .redirect-button img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+        .redirect-button:hover img {
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
