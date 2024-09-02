@@ -3,45 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Your Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>About Me - Your Name</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .store-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffab40;
+            color: #333;
+            text-align: center;
+            padding: 16px;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+        .background-shade {
+            position: fixed;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            z-index: 999;
+        }
+        .button {
+            flex: 1;
+            margin: 0 5px;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            box-sizing: border-box;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .button:active {
+            background-color: #003d7a;
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            width: 100%;
+            height: calc(100vh - 120px);
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .bottom-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+        .highlighted-link {
+            color: #fff;
+            background-color: #007bff;
+            padding: 0 10px;
+            text-decoration: none;
+            font-weight: normal;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+        .highlighted-link:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 768px) {
+            .store-banner {
+                font-size: 20px;
+            }
+            .background-shade {
+                flex-direction: column;
+            }
+            .button {
+                margin: 5px 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>About Me</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section id="about">
-        <div class="container">
-            <h2>Welcome to My About Page</h2>
-            <p>Hello! I'm [Your Name], a passionate cybersecurity professional with a background in [briefly describe your background, e.g., computer science, network security, etc.].</p>
-            <p>I have experience in identifying vulnerabilities, implementing security solutions, and staying ahead of emerging threats. My journey in cybersecurity started with [mention how you started or a significant experience], and I have since worked on various projects, including [mention any notable projects or experiences].</p>
-            <p>My skills include:</p>
-            <ul>
-                <li>Penetration Testing</li>
-                <li>Network Security</li>
-                <li>Incident Response</li>
-                <li>Threat Analysis</li>
-                <li>Security Audits</li>
-            </ul>
-            <p>When I'm not working, I enjoy [mention hobbies or interests related to technology or cybersecurity, or something personal]. Feel free to connect with me or explore my projects to learn more about what I do.</p>
-            <p>You can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
-        </div>
-    </footer>
+    <div class="store-banner">
+        Your Portfolio
+    </div>
+    <div class="background-shade">
+        <a href="../../index.html" class="button">Home</a> 
+        <a href="projects.html" class="button">Projects</a>
+        <a href="about-me.html" class="button">About Me</a>
+    </div>
+    <div class="main-content">
+        <h1>About Me</h1>
+        <p>Hello! I’m Your Name, a passionate individual in the field of [Your Field, e.g., web development, cybersecurity, etc.].</p>
+        <p>I have a strong background in [mention skills or experiences, e.g., software development, project management, etc.]. Over the years, I have worked on various projects, honing my skills and expanding my knowledge.</p>
+        <p>My journey began with [briefly mention how you started in your field, e.g., an inspiring project, education, etc.]. Since then, I have been involved in [describe some notable achievements or experiences].</p>
+        <p>When I’m not working, I enjoy [mention hobbies or interests]. Feel free to explore my projects and get in touch if you’d like to collaborate or learn more about my work.</p>
+    </div>
+    <div class="bottom-banner">
+        | <a href="../../index_fr.html" id="language-toggle">FR</a> | <p>&copy; 2024 Your Name. All rights reserved.</p> |
+    </div>
 </body>
 </html>
