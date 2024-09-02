@@ -137,17 +137,42 @@
         .highlighted-link:hover {
             background-color: #0056b3;
         }
-        @media (max-width: 768px) {
-            .store-banner {
-                font-size: 20px;
-            }
-            .background-shade {
-                flex-direction: column;
-            }
-            .button {
-                margin: 5px 0;
-            }
-        }
+        /* Large Devices (Tablets and Desktops) */
+@media (min-width: 992px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Small Devices (Phones) */
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .header, .footer {
+        text-align: center;
+    }
+
+    .grid {
+        display: block;
+    }
+
+    .grid-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
     </style>
 </head>
 <body>
