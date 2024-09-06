@@ -92,3 +92,27 @@ nav li:first-child{
     width: 100%;
   }
 }
+
+/* The overlay box */
+.overlay-box {
+  display: flex;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent black background */
+  color: white;
+  border-radius: 8px; /* Optional: rounded corners */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: adds a shadow for better visibility */
+  z-index: 1000;
+}
+
+/* Optional: Styling for the text inside the box */
+.overlay-box p {
+  margin: 0;
+  font-size: 1.2em;
+  color:#000000;
+}
+.overlay-box h2 {
+  margin: 0;
+  font-size: 1.2em;
+  color:#000000;
+}
