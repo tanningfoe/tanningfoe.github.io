@@ -94,28 +94,28 @@ nav li:first-child{
 }
 
 /* The overlay box */
-.overlay-box {
+.welcome-msg {
   display: flex;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent black background */
   color: white;
   border-radius: 8px; /* Optional: rounded corners */
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: adds a shadow for better visibility */
+  box-shadow: 0 4px 8px rgba(30, 255, 0, 0.911); /* Optional: adds a shadow for better visibility */
   z-index: 1000;
   align-items: flex-start;
   justify-content: flex-start;
 }
 
 /* Optional: Styling for the text inside the box */
-.overlay-box p{
+.welcome-msg p{
   display: flex;
   margin: 0;
   font-size: 1.2em;
   color:#000000;
   z-index: 1000;
 }
-.overlay-box h2 {
+.welcome-msg h2 {
   display: flex;
   margin: 0;
   font-size: 1.2em;
