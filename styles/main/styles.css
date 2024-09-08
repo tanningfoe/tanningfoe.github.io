@@ -93,7 +93,7 @@ nav li:first-child{
   }
 }
 
-/* The overlay box */
+/* The welcome overlayed box in homepage */
 .welcome-msg {
   display: flex;
   padding: 20px;
@@ -121,4 +121,46 @@ nav li:first-child{
   font-size: 1.2em;
   z-index: 1000;
   color:#000000; 
+}
+
+/* The filled overlayed box in skills */
+.skills-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff; /* Semi-transparent black background */
+  color: white;
+  border-radius: 8px; /* Optional: rounded corners */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.911); /* Optional: adds a shadow for better visibility */
+  z-index: 1000;
+  margin-top: 100px;
+}
+.skills-box li  {
+    margin: 0; /* Remove default margin if needed */
+    padding: 5px 0; /* Add padding to make space around the text */
+}
+/* Optional: Styling for the text inside the box */
+.skills-box p{
+  padding: 25px;
+  height: 100%;
+  margin: 0;
+  font-size: 1.2em;
+  color:#000000;
+  z-index: 1000;
+}
+.skills-box h2 {
+  margin: 0;
+  font-size: 1.2em;
+  z-index: 1000;
+  color:#000000; 
+}
+
+.skills-box ul {
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color:#000000;
+  z-index: 1000;
 }
