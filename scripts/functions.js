@@ -23,8 +23,8 @@ function showWelcomeMsg() {
 // Function to show the sidebar
 function showSidebar() {
     const sidebar = document.querySelector('.sidebar');
-    hideWelcomeMsg();
     hideBottonBanner();
+    hideWelcomeMsg();
     sidebar.style.display = 'flex';
 }
 // Function to hide the sidebar
