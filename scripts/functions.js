@@ -11,26 +11,26 @@ function showBottomBanner() {
 
 //Function to hide welcome message
 function hideWelcomeMsg() {
-    const welcomemsg = document.querySelector('.overlay-box');
+    const welcomemsg = document.querySelector('.welcome-msg');
     welcomemsg.style.display = 'none';
 }
 //Function to show welcome message
 function showWelcomeMsg() {
-    const welcomemsg = document.querySelector('.overlay-box');
+    const welcomemsg = document.querySelector('.welcome-msg');
     welcomemsg.style.display = 'flex';
 }
 
 // Function to show the sidebar
 function showSidebar() {
-    const sidebar = document.querySelector('.sidebar');
-    hideBottonBanner();
     hideWelcomeMsg();
+    hideBottonBanner();
+    const sidebar = document.querySelector('.sidebar');
     sidebar.style.display = 'flex';
 }
 // Function to hide the sidebar
 function hideSidebar() {
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = 'none';
     showWelcomeMsg();
     showBottomBanner();
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none';   
 }
