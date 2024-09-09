@@ -164,3 +164,33 @@ nav li:first-child{
   color:#000000;
   z-index: 1000;
 }
+
+
+/* The filled overlayed box in about me */
+.about-me-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff; /* Semi-transparent black background */
+  color: white;
+  border-radius: 8px; /* Optional: rounded corners */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.911); /* Optional: adds a shadow for better visibility */
+  z-index: 1000;
+  margin-top: 100px;
+}
+
+.about-me-box h3 {
+  color: #000000;
+  margin: 0;
+  align-items: top;
+  z-index: 1000;
+}
+
+.about-me-box p {
+  color: #000000;
+  margin: 0;
+  font-size: 1.2em;
+  z-index: 1000;
+}
