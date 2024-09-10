@@ -1,14 +1,16 @@
+// JS global functions template, global variables set before function
+
+const bottombanner = document.querySelector('.bottom-banner');
 //Function to hide bottom banner
 function hideBottonBanner() {
-    const welcomemsg = document.querySelector('.bottom-banner');
-    welcomemsg.style.visibility = 'hidden';
+    bottombanner.style.visibility = 'hidden';
 }
 //Function to show bottom banner
 function showBottomBanner() {
-    const welcomemsg = document.querySelector('.bottom-banner');
-    welcomemsg.style.visibility = 'visible';
+    bottombanner.style.visibility = 'visible';
 }
 
+const welcomemsg = document.querySelector('.welcome-msg');
 //Function to hide welcome message
 function hideWelcomeMsg() {
     const welcomemsg = document.querySelector('.welcome-msg');
@@ -20,54 +22,60 @@ function showWelcomeMsg() {
     welcomemsg.style.display = 'flex';
 }
 
+const skillsbox = document.querySelector('.skills-box');
 //Function to hide skills box
 function hideSkillsBox() {
-    const skillsbox = document.querySelector('.skills-box');
     skillsbox.style.display = 'none';
 }
 //Function to show skills box
 function showSkillsBox() {
-    const skillsbox = document.querySelector('.skills-box');
     skillsbox.style.display = 'flex';
 }
 
+const aboutbox  = document.querySelector('.about-me-box');
 //Function to hide about-me box
 function hideAboutMeBox() {
-    const aboutbox = document.querySelector('.about-me-box');
     aboutbox.style.display = 'none';
 }
 //Function to show about-me box
 function showAboutMeBox() {
-    const aboutbox = document.querySelector('.about-me-box');
     aboutbox.style.display = 'flex';
 }   
-// Function to show the sidebar
+
+const sidebar = document.querySelector('.sidebar');
+// Function to show the sidebar in tablets and phones
 function showSidebar() {
-    const welcomemsg = document.querySelector('.welcome-msg');
-    const skillsmsg  = document.querySelector('.skills-box');
-    const aboutbox  = document.querySelector('.about-me-box');
+
+    //Fix display check
     if (welcomemsg != null)
         hideWelcomeMsg();
-    if (skillsmsg != null)
+    if (skillsbox != null)
         hideSkillsBox();
     if (aboutbox != null)
         hideAboutMeBox();
+    if (bottombanner != null)
+
+    // Hide bottom banner
     hideBottonBanner();
-    const sidebar = document.querySelector('.sidebar');
+
+    // Set sidebar visible
     sidebar.style.display = 'flex';
 }
+
 // Function to hide the sidebar
 function hideSidebar() {
-    const welcomemsg = document.querySelector('.welcome-msg');
-    const skillsbox  = document.querySelector('.skills-box');
-    const aboutbox  = document.querySelector('.about-me-box');
+
+    // Fix display check
     if (welcomemsg != null)
         showWelcomeMsg();
     if (skillsbox != null)
         showSkillsBox();
     if (aboutbox != null)
         showAboutMeBox();
+    
+    // Show bottom banner
     showBottomBanner();
-    const sidebar = document.querySelector('.sidebar');
+
+    // Set sidebar invisble
     sidebar.style.display = 'none';   
 }
