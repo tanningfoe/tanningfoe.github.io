@@ -61,6 +61,8 @@ nav li:first-child{
 }
 .bottom-banner {
     position: fixed;
+    align-items: center;
+    justify-content: flex-end;
     bottom: 0;
     left: 0;
     width: 100%;
