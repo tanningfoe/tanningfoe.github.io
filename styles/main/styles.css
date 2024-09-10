@@ -104,6 +104,10 @@ nav li:first-child{
   flex-direction: column;
 }
 
+.content-box p {
+  text-align: center;
+}
+
 .content-box ul{
   text-align: center;
 }
