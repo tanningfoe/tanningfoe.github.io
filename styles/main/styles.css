@@ -4,15 +4,14 @@
 }
 body{
   min-height: 100vh;
-  background: url('../../images/bg/ascii-xploit-bg.jpg');
+  background: url('../../images/bg/unsplash.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 nav{
-  background-color: #797979;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  background-color: #868e96;
 }
 nav ul{
   width: 100%;
@@ -33,7 +32,7 @@ nav a{
   color: black;
 }
 nav a:hover{
-  background-color: #797979;
+  background-color: #868e96;
 }
 nav li:first-child{
   margin-right: auto;
@@ -44,8 +43,7 @@ nav li:first-child{
   right: 0;
   height: 100vh;
   width: 250px;
-  background-color: #797979;
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #868e96;
   list-style: none;
   display: none;
   flex-direction: column;
@@ -66,12 +64,11 @@ nav li:first-child{
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #797979;
+    background-color: #868e96;
     color: #000000;
     text-align: center;
     padding: 15px;
     font-size: 14px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     visibility: visible;
 }
