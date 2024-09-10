@@ -93,102 +93,33 @@ nav li:first-child{
   }
 }
 
-/* The welcome overlayed box in homepage */
-.welcome-msg {
-  display: flex;
+/* Content Boxes */
+.content-box {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(30, 255, 0, 0.911);
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent black background */
-  color: white;
-  border-radius: 8px; /* Optional: rounded corners */
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-box ul{
   text-align: center;
-  box-shadow: 0 4px 8px rgba(30, 255, 0, 0.911); /* Optional: adds a shadow for better visibility */
-  z-index: 1000;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 
-/* Optional: Styling for the text inside the box */
-.welcome-msg p{
-  display: flex;
-  margin: 0;
-  font-size: 1.2em;
-  color:#000000;
-  z-index: 1000;
-}
-.welcome-msg h2 {
-  display: flex;
-  margin: 0;
-  font-size: 1.2em;
-  z-index: 1000;
-  color:#000000; 
-}
-
-/* The filled overlayed box in skills */
-.skills-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: #ffffff; /* Semi-transparent black background */
-  color: white;
-  border-radius: 8px; /* Optional: rounded corners */
+.content-box h1 {
   text-align: center;
-  box-shadow: 0 4px 8px rgba(30, 255, 0, 0.911); /* Optional: adds a shadow for better visibility */  z-index: 1000;
-  margin-top: 100px;
-}
-.skills-box li  {
-    margin: 0; /* Remove default margin if needed */
-    padding: 5px 0; /* Add padding to make space around the text */
-}
-/* Optional: Styling for the text inside the box */
-.skills-box p{
-  padding: 25px;
-  height: 100%;
-  margin: 0;
-  font-size: 1.2em;
-  color:#000000;
-  z-index: 1000;
-}
-.skills-box h2 {
-  margin: 0;
-  font-size: 1.2em;
-  z-index: 1000;
-  color:#000000; 
 }
 
-.skills-box ul {
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  color:#000000;
-  z-index: 1000;
-}
-
-
-/* The filled overlayed box in about me */
-.about-me-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: #ffffff; /* Semi-transparent black background */
-  color: white;
-  border-radius: 8px; /* Optional: rounded corners */
+.content-box h1 {
   text-align: center;
-  box-shadow: 0 4px 8px rgba(30, 255, 0, 0.911); /* Optional: adds a shadow for better visibility */  z-index: 1000;
-  margin-top: 100px;
 }
 
-.about-me-box h3 {
-  color: #000000;
-  margin: 0;
-  align-items: top;
-  z-index: 1000;
+.content-box h2 {
+  text-align: center;
 }
 
-.about-me-box p {
-  color: #000000;
-  margin: 0;
-  font-size: 1.2em;
-  z-index: 1000;
+.content-box .grid-item {
+  text-align: center;
 }
