@@ -128,3 +128,23 @@ nav li:first-child{
 .content-box .grid-item {
   text-align: center;
 }
+
+.nav-buttons-projects {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 750px;
+}
+
+.nav-button-projects {
+  padding: 10px 10px;
+  background-color: #868e96;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(30, 255, 0, 0.911);
+}
+
+.nav-button-projects:hover {
+  background-color: #868e96;
+}
