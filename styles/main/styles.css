@@ -77,6 +77,24 @@ nav li:first-child{
     color: #000000;
     text-decoration: none;
 }
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+  .nav-buttons-projects {
+      bottom: 35px; /* Increased to avoid overlap with bottom banner */
+      flex-wrap: wrap; /* Allow buttons to wrap if needed */
+  }
+
+  .nav-button-projects {
+      font-size: 14px; /* Slightly smaller font size for mobile */
+      padding: 8px 8px; /* Slightly smaller padding */
+  }
+
+  body {
+      padding-bottom: 90px; /* Increased to account for wrapped buttons and banner */
+  }
+}
+
 @media(max-width: 800px){
   .hideOnMobile{
     display: none;
