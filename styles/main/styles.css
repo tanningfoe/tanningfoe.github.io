@@ -9,6 +9,7 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 70px; /* Adjust based on the height of your nav buttons */
 }
 nav{
   background-color: #868e96;
@@ -90,6 +91,7 @@ nav li:first-child{
   }
 }
 
+
 /* Content Boxes */
 .content-box {
   background-color: rgba(255, 255, 255, 0.7);
@@ -129,14 +131,21 @@ nav li:first-child{
   text-align: center;
 }
 
+/* Container for the navigation buttons */
 .nav-buttons-projects {
   display: flex;
   gap: 10px;
   justify-content: center;
-  margin-top: 750px;
   align-items: center;
+  position: fixed;
+  bottom: 50px; /* Adjust this value to set distance from bottom */
+  left: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 1000; /* Ensures buttons stay on top of other content */
 }
 
+/* Individual button styling */
 .nav-button-projects {
   padding: 10px 10px;
   background-color: #868e96;
@@ -146,6 +155,19 @@ nav li:first-child{
   box-shadow: 0 4px 8px rgba(30, 255, 0, 0.911);
 }
 
-.nav-button-projects:hover {
+.horizontal-buttons-projects {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 25px;
+  align-items: center;
+}
+
+.horizontal-button-projects {
+  padding: 10px 10px;
+  color: rgb(0, 0, 0);
   background-color: #868e96;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(30, 255, 0, 0.911);
 }
