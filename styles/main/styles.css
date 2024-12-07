@@ -172,3 +172,13 @@ nav li:first-child{
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(30, 255, 0, 0.911);
 }
+
+#content_msgs {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#content_imgs {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}

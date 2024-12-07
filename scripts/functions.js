@@ -79,3 +79,22 @@ function hideSidebar() {
     // Set sidebar invisble
     sidebar.style.display = 'none';   
 }
+
+// Flag to prevent multiple fade-ins during navigation
+let alreadyLoaded = false;
+
+// Define the function that will trigger the fade-in effect
+function fadeInPage() {
+    var contentBox = document.getElementById("content_msgs");
+
+    // Set opacity for both elements to trigger fade-in
+    contentBox.style.opacity = 1;
+}
+
+// Window onload event: Ensure fade-in only happens once on page load
+window.onload = function() {
+    if (!alreadyLoaded) {
+        fadeInPage(); // Trigger fade-in effect
+        alreadyLoaded = true; // Set flag to prevent repeated fade-ins
+    }
+}
