@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Collapsible Paragraph with Ellipsis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Green content box */
+        .content-box {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style for the main content */
+        .content {
+            font-size: 16px;
+        }
+
+        /* Style for the ellipsis (three dots) */
+        .ellipsis {
+            font-size: 20px;
+            cursor: pointer;
+            user-select: none;
+            color: #ffffff;
+            margin-left: 10px;
+        }
+
+        /* Initially hidden content with smooth transition for height */
+        .collapsible-content {
+            max-height: 0; /* Start with 0 height */
+            overflow: hidden; /* Hide content that overflows */
+            opacity: 0; /* Start with invisible content */
+            transition: max-height 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+            padding: 0 10px; /* For some padding inside the paragraph */
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+
+        .collapsible-content.show {
+            max-height: 200px; /* Set a max-height for the expanded content */
+            opacity: 1; /* Make the content visible */
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="content-box">
+        <div class="content">
+            This paragraph will smoothly slide open or close when the three dots at the end are clicked. 
+            The content expands and contracts with a smooth animation effect. 
+            <span class="ellipsis" onclick="toggleContent()">...</span>
+        </div>
+        <div class="collapsible-content">
+            <p>This is the collapsible content. It appears and disappears with a smooth animation. You can add more text here if you'd like.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent() {
+            var content = document.querySelector('.collapsible-content');
+            content.classList.toggle('show');
+        }
+    </script>
+    
+</body>
+</html>
