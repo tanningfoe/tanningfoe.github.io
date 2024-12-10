@@ -182,3 +182,17 @@ nav li:first-child{
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
+
+/* Button style */
+.expand-button {
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+.content-box-paragraph {
+  display: none;
+}

@@ -98,3 +98,17 @@ window.onload = function() {
         alreadyLoaded = true; // Set flag to prevent repeated fade-ins
     }
 }
+
+document.querySelectorAll('.expand-button').forEach(button => {
+    button.addEventListener('click', function() {
+        const paragraph = this.nextElementSibling;  // The paragraph right after the button
+
+        if (paragraph.style.display === 'none' || paragraph.style.display === '') {
+            paragraph.style.display = 'block';  // Show the paragraph
+            // this.textContent = 'Collapse';  // Change button text
+        } else {
+            paragraph.style.display = 'none';  // Hide the paragraph
+            this.textContent = '...';  // Reset button text to '...'
+        }
+    });
+});
